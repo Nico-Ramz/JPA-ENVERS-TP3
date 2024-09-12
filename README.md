@@ -1,4 +1,2 @@
-Comenzamos a estudiar JPA y la implementación con Hibernate. (Proyecto de base )
-1- Descargar el proyecto
-2- Abrir en Intelligent Idea Community
-3 - Este Proyecto utiliza gradle y la base de dato H2 en memoria para simplificar
+Al proyecto original de JPA le agregamos ENVERS
+En el Main se encuentra comentado para hacer un Marge y un Remove sobre la instancia factura de la clase Factura

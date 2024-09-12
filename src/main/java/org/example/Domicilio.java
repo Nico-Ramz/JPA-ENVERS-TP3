@@ -1,5 +1,6 @@
 package org.example;
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,7 +12,7 @@ import java.io.Serializable;
 @Setter
 @Getter
 @Builder
-
+@Audited
 
 public class Domicilio implements Serializable {
     private static final long serialVersionUID=1L;

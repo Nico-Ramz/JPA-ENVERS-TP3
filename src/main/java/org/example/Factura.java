@@ -1,6 +1,7 @@
 package org.example;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.CharArrayReader;
@@ -14,7 +15,7 @@ import java.util.Set;
 @Setter
 @Getter
 @Builder
-
+@Audited
 @Entity
 public class Factura implements Serializable {
 

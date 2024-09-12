@@ -76,13 +76,28 @@ public class Main {
 
             entityManager.persist(domicilio);
             entityManager.persist(cliente);
-            entityManager.persist(factura);
             entityManager.persist(detalle2);
             entityManager.persist(detalle1);
             entityManager.persist(articulo1);
             entityManager.persist(articulo2);
             entityManager.persist(Libreria);
             entityManager.persist(Limpieza);
+            entityManager.persist(factura);
+
+
+/*
+            Factura factura =entityManager.find(Factura.class, 1L);
+            factura.setNumero(85);
+
+            entityManager.merge(factura);
+
+            Factura factura =entityManager.find(Factura.class, 1L);
+            factura.setNumero(85);
+
+            entityManager.remove(factura);
+*/
+
+
 
             entityManager.getTransaction().commit();
         } catch (Exception e) {
